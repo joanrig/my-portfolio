@@ -10,6 +10,7 @@ class Projects extends Component {
     let congress = {
       id: 1,
       name: "Who's Who in Congress",
+      image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/vote-lead-01-1520883451.jpg?crop=1.00xw:1.00xh;0,0&resize=640:*",
       type: "solo",
       tools: [
         "Rails API",
@@ -45,6 +46,7 @@ class Projects extends Component {
     let vacationBidder = {
       id: 2,
       name: "Vacation Bidder",
+      image: "https://images.unsplash.com/photo-1534008897995-27a23e859048?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
       type: "solo",
       tools: [
         "Ruby on Rails",
@@ -68,6 +70,7 @@ class Projects extends Component {
     let hogIron = {
       id: 3,
       name: "Hog Iron",
+      image: "https://i.kinja-img.com/gawker-media/image/upload/s--JHpsIlda--/c_scale,f_auto,fl_progressive,q_80,w_800/zjailhncxg4yutmlu3up.jpg",
       type: "group",
       contributors: ["Lizzie Chan", "Vinh Do", "Bryn Lastname"],
       github: {
@@ -87,6 +90,7 @@ class Projects extends Component {
     let spaceMissions = {
       id: 4,
       name: "Space Missions CLI",
+      image: "https://www.jpl.nasa.gov/missions/web/cassini.jpg",
       type: "solo",
       contributors: "",
       github: {
@@ -111,25 +115,21 @@ class Projects extends Component {
     }
 
     let projects = [congress, vacationBidder, hogIron, spaceMissions]
-    debugger
-
-
 
     return (
       <Container className="center">
         <br/>
         <h1>
-          Hello from Projects.js
+          My Recent Projects
         </h1>
         <br/>
         <br/>
         <br/>
-        <Card.Group>
-
-        {projects.map(project =>
-          <ProjectCard
-            key={project.id} project={project}/>
-          )}
+        <Card.Group itemsPerRow={2}>
+          {projects.map(project =>
+            <ProjectCard
+              key={project.id} project={project}/>
+            )}
         </Card.Group>
       </Container>
     )

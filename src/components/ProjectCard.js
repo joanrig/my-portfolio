@@ -6,22 +6,28 @@ import { Card, Image} from 'semantic-ui-react'
 class ProjectCard extends Component  {
 
   render(){
+    debugger
     return (
       <Card>
-        <Image src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/vote-lead-01-1520883451.jpg?crop=1.00xw:1.00xh;0,0&resize=640:*" />
+        <Image src={this.props.project.image} />
 
         <Card.Content >
           <Card.Header>
-
+            <h2>{this.props.project.name}</h2>
           </Card.Header>
 
           <Card.Description>
-
+            Project type: solo / group etc. <br/>
+            Notes go here <br/>
+            Blogposts here <br/>
+            embedded video?
           </Card.Description>
         </Card.Content>
 
         <Card.Content extra >
           <div>
+          Tools list
+          icons for ruby, javascript, etc.
 
           </div>
         </Card.Content>
