@@ -31,13 +31,12 @@ const Resume = () => {
         </h2>
 
         <p >
-          Full stack web developer with nine years of experience founding and building my own technology education company, where I developed solid management skills and discovered how much fun it is to learn and teach new programming languages. With experience in Ruby, Rails, JavaScript, and React, I am looking forward to managing entry-level developers. I live in Washington, D.C.
+          Full stack web developer with nine years of experience founding and building my own technology education company, where I developed solid management skills and discovered how much fun it is to learn and teach new programming languages. With experience in Ruby, Rails, JavaScript, and React, I am looking forward to building fun sites and managing entry-level developers. I live near Washington, D.C.
         </p>
-        <br/>
+
         <h2 className="ui block header center blue">
           Flatiron Technical Projects
         </h2>
-
 
         <p>
           <strong>Who’s Who in Congress Game, a React-Redux app using a Rails API and Postres database.<a href="https://github.com/joanrig/congress_api"> Github Back-End</a> | <a href="https://github.com/joanrig/congress_front_end">Github Front-end</a> | <a href="https://www.loom.com/share/7f2536bd3ee84514a88d96a6d242d46e">Video</a></strong><br/>Fetches data on Congress members and bills  from ProPublica, uses Semantic UI React to present data as cards. Search and sort data using logic in Ruby, JavaScript and JSX. Guess who’s who and flip a card to find out!
@@ -57,7 +56,6 @@ const Resume = () => {
           <strong>Hog-Iron,  A group project : Harry Potter website. Built with Rails and ActiveRecord.<a href= "https://github.com/joanrig/Hog-Iron"> Github </a> | <a href="https://hog-iron.herokuapp.com/"> Demo </a></strong><br/>I contributed Ruby logic for sorting users into houses; and used Bootstrap to style most of the app’s pages.
         </p>
 
-        <br/>
         <h2 className="ui block header center blue">
           Work Experience
         </h2>
@@ -81,18 +79,18 @@ const Resume = () => {
           <strong>The Wall Street Journal, Pittsburgh and San Francisco. Staff Writer,</strong> September 1990 to May 1997<br/>
           Wrote front-page stories and hundreds of features and news stories about topics including technology, management and race.
         </p>
-        <br/>
-        <h2 className="ui block header center blue">
+
+        <h2 className="ui block header center blue education">
           Education and Personal
         </h2>
 
-          <strong>Flatiron School,</strong> graduated July 2019 / Full Stack Web Development, Ruby on Rails and JavaScript full-time online program<br/><br/>
-          <strong>University of California, Berkeley, Master’s of Journalism,</strong> May 1989<br/><br/>
-          <strong>Boston College, B.A. English,</strong> May 1986, graduated cum laude in three years while working<br/><br/>
-          <strong>Languages:</strong> Conversational French and Spanish, can order more beer in Bahasa Indonesian<br/><br/>
-          <strong>Fun:</strong> coding, canoeing, long-distance cycling, knitting, Coursera courses<br/><br/>
-
-        <br/>
+        <p>
+          <strong>Flatiron School,</strong> graduated July 2019 / Full Stack Web Development, Ruby on Rails and JavaScript full-time online program<br/>
+          <strong>University of California, Berkeley, Master’s of Journalism,</strong> May 1989<br/>
+          <strong>Boston College, B.A. English,</strong> May 1986, graduated cum laude in three years while working<br/>
+          <strong>Languages:</strong> Conversational French and Spanish, can order more beer in Bahasa Indonesian<br/>
+          <strong>Fun:</strong> coding, canoeing, long-distance cycling, knitting, Coursera courses<br/>
+        </p>
         <br/>
 
       </Container>
