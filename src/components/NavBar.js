@@ -8,10 +8,10 @@ const NavBar = () => {
     <div>
         <br/>
         <div className='navbar center'>
-          <Link to='/' ><Button size='massive' color='red'>Home</Button></Link>&nbsp;&nbsp;&nbsp;&nbsp;
-          <Link to='/projects' ><Button size='massive' color='blue'>Projects</Button></Link>&nbsp;&nbsp;&nbsp;&nbsp;
-          <Link to='/resume' ><Button size='massive' color='green'>Resume</Button></Link>&nbsp;&nbsp;&nbsp;&nbsp;
-          <Link to='/about' ><Button size='massive' color='purple'>About</Button></Link>
+          <Link to='/' className="big grey">Home</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <Link to='/projects' className="big grey">Projects</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <Link to='/resume' className="big grey">Resume</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <Link to='/about' className="big grey">About</Link>
           <br/>
           <br/>
         </div>

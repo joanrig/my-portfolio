@@ -28,7 +28,7 @@ class Projects extends Component {
         },
       video: "https://www.loom.com/share/7f2536bd3ee84514a88d96a6d242d46e",
       demo: "",
-      notes: "A guessing game. Search and sort Congress members by party, gender and fun traits like most missed votes! Then guess who's who and click to reveal the answer. You can also search for bills. Built with React, Redux and Semantic React UI on the front end; and a Rails API and Postgres database on the back end.",
+      notes: "A guessing game. Search and sort Congress members by party, gender and fun traits like most missed votes! Then guess who's who and click to reveal the answer. You can also search for bills. Built with React, Redux and Semantic React UI on the front end; and a Rails API, ActiveModel and Postgres on the back end.",
       blogPosts: [
         {
           title: "Hey, Mr. Postman",
@@ -63,7 +63,7 @@ class Projects extends Component {
         },
       video: "https://www.loom.com/share/b46f1f2896d64e1d9f90be2968037326",
       demo: "",
-      notes: "Add to your bucket list and then turn bucket list items into vacations. Add attractions and schedules to vacations. This is where I learned to secure logins, third-party login and conditional logic to render background pictures based on object attributes. Built with Rails, Javascript and Bootstrap on the front end and Rails and Postgres on the back end.",
+      notes: "Add to your bucket list and then turn bucket list items into vacations. Add attractions and schedules to vacations. This is where I learned to secure logins, third-party login and conditional logic to render background pictures based on object attributes. Built with Rails, Javascript and Bootstrap on the front end; and Rails, ActiveModel and Postgres on the back end.",
       blogPosts: [
         {
           title: "Nested Routes and Nested Forms",
@@ -88,7 +88,7 @@ class Projects extends Component {
       ],
       video: "",
       demo: "https://hog-iron.herokuapp.com/",
-      notes: "A mock Harry Potter site where you can be sorted into house and sign up for classes. I contributed logic for the sorting act and full-screen images/ Boostrap styling for most pages. Built with Rails and Bootstrap on the front end and Rails and Postgres on the back end.",
+      notes: "A mock Harry Potter site where you can be sorted into house and sign up for classes. I contributed logic for the sorting act and full-screen images/ Boostrap styling for most pages. Built with Rails and Bootstrap on the front end and Rails, ActiveModel and Postgres on the back end.",
       blogPosts: ""
     }
 
@@ -134,11 +134,16 @@ class Projects extends Component {
           </div>
           <br/>
           <br/>
+
+          <div className="big">
+            My projects, including links to videos and Github repos.
+          </div>
+          <br/>
           <br/>
           <Card.Group itemsPerRow={2}>
             {projects.map(project =>
               <ProjectCard
-                key={project.id} project={project}/>
+                key={project.id} project={project} padding="20px"/>
               )}
           </Card.Group>
           <br/>
