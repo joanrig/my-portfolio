@@ -1,14 +1,14 @@
 import React from 'react';
 import { Image } from 'semantic-ui-react'
 import ferris from './ferris.jpg'
-// import NavBar from './NavBar'
+import { Link } from 'react-router-dom'
 
 
 const Home = () => {
 
   return (
     <>
-      <Image src={ferris} />
+      <Link to='/projects'><Image src={ferris} /></Link>
     </>
   )
 }
