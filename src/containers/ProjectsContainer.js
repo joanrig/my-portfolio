@@ -88,7 +88,7 @@ class Projects extends Component {
       ],
       video: "",
       demo: "https://hog-iron.herokuapp.com/",
-      notes: "A mock Harry Potter site where you can be sorted into house and sign up for classes. I contributed logic for the sorting act and full-screen images/ Boostrap styling for most pages. Built with Rails and Bootstrap on the front end and Rails, ActiveModel and Postgres on the back end.",
+      notes: "A mock Harry Potter site where you can be sorted into house and sign up for classes. I contributed logic for the sorting act and Boostrap styling for most pages. Built with Rails and Bootstrap on the front end and Rails, ActiveModel and Postgres on the back end.",
       blogPosts: ""
     }
 
@@ -129,15 +129,12 @@ class Projects extends Component {
           <br/>
           <br/>
 
-          <div className="huge">
+          <div className="massive grey">
             My Recent Projects
           </div>
           <br/>
           <br/>
 
-          <div className="big">
-            My projects, including links to videos and Github repos.
-          </div>
           <br/>
           <br/>
           <Card.Group itemsPerRow={2}>

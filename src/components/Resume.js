@@ -9,8 +9,9 @@ const Resume = () => {
     <>
       <NavBar/>
       <br/>
-      <h2 className="center white"> resume</h2>
-      <br/>      
+      <br/>
+      <br/>
+      <br/>
       <Container className="resume">
         <br/>
         <br/>
