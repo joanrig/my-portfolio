@@ -3,8 +3,12 @@
 }
 
 
-.ui.cards>.card>.content.extra.cardBottom {
+/* .ui.cards>.card>.content.extra.cardBottom {
   background-color: rgb(194,186,179,0.6);
+} */
+
+.readable {
+  font-size: 1.3em;
 }
 
 .center {
@@ -16,5 +20,33 @@
 }
 
 .blue {
-  background-color: 
+  background-color: rgb(48,112,252)
 }
+
+.black {
+  color: rgb(0,0,0);
+}
+
+.huge {
+  font-size: 4em;
+}
+
+.large{
+  font-size: 2em;
+}
+
+.resume {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 1.2em;
+}
+
+.about {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 1.4em;
+}
+
+
+
+
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Kreon', serif;

@@ -28,30 +28,24 @@ class ProjectCard extends Component  {
 
     let videoUrl = ""
     if (project.video){
-      videoUrl = <h3><a href={project.video}>Video</a></h3>
+      videoUrl = <a href={project.video}><i class="video icon big"></i></a>
     }
 
     let githubLink = ""
     if (project.github.mono){
-        githubLink = <h3><a href={project.github.mono}>Github</a></h3>
+        githubLink = <a href={project.github.mono}><i class="github icon big"></i></a>
     } else if (project.github.frontEnd && project.github.backEnd){
         githubLink =
         <>
-          <h3><a href={project.github.frontEnd}>Github Front End</a> ---
-          <a href={project.github.backEnd}>Github Back End</a></h3>
+          <a href={project.github.frontEnd}><i class="github icon big"></i></a>
+          <a href={project.github.backEnd}><i class="github icon big"></i></a>
         </>
     }
 
     let demo = ""
     if (project.demo){
-        demo = <h3><a href={project.demo}>Demo</a></h3>
+        demo = <a href={project.demo}><i class="desktop icon big"/></a>
     }
-
-
-
-
-
-
 
 
     return (
@@ -60,27 +54,30 @@ class ProjectCard extends Component  {
 
         <Card.Content >
           <Card.Header>
-            <h2>{project.name}</h2>
+            <br/>
+            <div className="large">{project.name}</div>
           </Card.Header>
 
-          <Card.Description>
-            <h4>{project.type} project</h4>
-            {project.contributors}
+          <Card.Description className="readable">
+            <h3>{project.type} project</h3>
             <br/>
             <br/>
+
             <div className = "left">
               {project.notes}<br/>
             </div>
-            {demo}
-            {videoUrl}
-            {githubLink}
+
+            <br/>
             <h3>Blog Posts </h3>
             {blogPosts}
+
           </Card.Description>
         </Card.Content>
 
         <Card.Content extra className="cardBottom">
-          {tools}
+        {demo}
+        {videoUrl}
+        {githubLink}
         </Card.Content>
       </Card>
     )

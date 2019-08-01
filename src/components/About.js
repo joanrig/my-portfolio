@@ -5,7 +5,7 @@ import { Container, Image } from 'semantic-ui-react'
 const About = () => {
   return (
 
-    <Container>
+    <Container className="about">
       <br/>
 
       <h1 className="ui block header center">

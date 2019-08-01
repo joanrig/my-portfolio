@@ -14,6 +14,7 @@ class Projects extends Component {
       type: "solo",
       tools: [
         "Rails API",
+        "PostgreSQL",
         "React",
         "Redux",
         "JavaScript",
@@ -26,7 +27,7 @@ class Projects extends Component {
         },
       video: "https://www.loom.com/share/7f2536bd3ee84514a88d96a6d242d46e",
       demo: "",
-      notes: "A guessing game. Search and sort Congress members by party, gender and fun traits like most missed votes! Then guess who's who and click to reveal the answer. You can also get each Member's most recent bill and search all active bills by subject.",
+      notes: "A guessing game. Search and sort Congress members by party, gender and fun traits like most missed votes! Then guess who's who and click to reveal the answer. You can also search for bills. Built with React, Redux and Semantic React UI on the front end; and a Rails API and Postgres database on the back end.",
       blogPosts: [
         {
           title: "Hey, Mr. Postman",
@@ -50,6 +51,7 @@ class Projects extends Component {
       type: "solo",
       tools: [
         "Ruby on Rails",
+        "PostgreSQL",
         "Javascript",
         "Bootstrap",
         "OmniAuth",
@@ -60,7 +62,7 @@ class Projects extends Component {
         },
       video: "https://www.loom.com/share/b46f1f2896d64e1d9f90be2968037326",
       demo: "",
-      notes: "Add to your bucket list and then turn bucket list items into vacations. Add attractions and schedules to vacations. This is where I learned to secure logins, third-party login and conditional logic to render background pictures based on object attributes.",
+      notes: "Add to your bucket list and then turn bucket list items into vacations. Add attractions and schedules to vacations. This is where I learned to secure logins, third-party login and conditional logic to render background pictures based on object attributes. Built with Rails, Javascript and Bootstrap on the front end and Rails and Postgres on the back end.",
       blogPosts: [
         {
           title: "Nested Routes and Nested Forms",
@@ -80,11 +82,12 @@ class Projects extends Component {
         },
       tools: [
         "Ruby on Rails",
+        "PostgreSQL",
         "Bootstrap"
       ],
       video: "",
       demo: "https://hog-iron.herokuapp.com/",
-      notes: "A mock Harry Potter site where you can be sorted into house and sign up for classes. I contributed logic for the sorting act and full-screen images/ Boostrap styling for most pages. Made with Ruby on Rails and Bootstrap.",
+      notes: "A mock Harry Potter site where you can be sorted into house and sign up for classes. I contributed logic for the sorting act and full-screen images/ Boostrap styling for most pages. Built with Rails and Bootstrap on the front end and Rails and Postgres on the back end.",
       blogPosts: ""
     }
 
@@ -95,14 +98,14 @@ class Projects extends Component {
       type: "solo",
       contributors: "",
       github: {
-          mono: "https://github.com/joanrig/Hog-Iron"
+          mono: "https://github.com/joanrig/space_missions2.0"
         },
       tools: [
         "Ruby", "Nokogiri"
       ],
       video: "https://www.loom.com/share/4c54a64adebd4bf3afb0913da06649df",
       demo: "",
-      notes: "A command line interface program that allows you to sort NASA's Jet Propulsion Laboratory's space  missions by date and planet. Built with Ruby and now available for download as a Ruby Gem.",
+      notes: "A command line interface program that allows you to sort NASA's Jet Propulsion Laboratory's space  missions by date and planet. Built with Ruby and now available for download as a Ruby Gem. Uses Nokogiri to scrape the JPL website.",
       blogPosts: [
         {
           title: "Creating my own Ruby Gem: a Tale of Fear and Git",
@@ -120,9 +123,12 @@ class Projects extends Component {
     return (
       <Container className="center">
         <br/>
-        <h1>
+        <br/>
+        <br/>
+
+        <div className="huge">
           My Recent Projects
-        </h1>
+        </div>
         <br/>
         <br/>
         <br/>
@@ -132,6 +138,9 @@ class Projects extends Component {
               key={project.id} project={project}/>
             )}
         </Card.Group>
+        <br/>
+        <br/>
+        <br/>
       </Container>
     )
   }
