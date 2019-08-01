@@ -44,7 +44,7 @@ class ProjectCard extends Component  {
 
     let demo = ""
     if (project.demo){
-        demo = <h3><a href="{project.demo}">Demo</a></h3>
+        demo = <h3><a href={project.demo}>Demo</a></h3>
     }
 
 
@@ -79,7 +79,7 @@ class ProjectCard extends Component  {
           </Card.Description>
         </Card.Content>
 
-        <Card.Content extra >
+        <Card.Content extra className="cardBottom">
           {tools}
         </Card.Content>
       </Card>

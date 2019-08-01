@@ -3,19 +3,8 @@
 }
 
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
+.ui.cards>.card>.content.extra.cardBottom {
+  background-color: rgb(194,186,179,0.6);
 }
 
 .center {
@@ -24,4 +13,8 @@
 
 .left {
   text-align: left;
+}
+
+.blue {
+  background-color: 
 }
