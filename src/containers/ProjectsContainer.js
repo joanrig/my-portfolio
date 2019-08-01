@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Card } from 'semantic-ui-react'
 import ProjectCard from '../components/ProjectCard.js'
+import NavBar from '../components/NavBar'
 
 
 class Projects extends Component {
@@ -121,27 +122,32 @@ class Projects extends Component {
     let projects = [congress, vacationBidder, hogIron, spaceMissions]
 
     return (
-      <Container className="center">
-        <br/>
-        <br/>
-        <br/>
+      <>
+        <NavBar/>
+        <Container className="center">
+          <br/>
+          <br/>
+          <br/>
 
-        <div className="huge">
-          My Recent Projects
-        </div>
-        <br/>
-        <br/>
-        <br/>
-        <Card.Group itemsPerRow={2}>
-          {projects.map(project =>
-            <ProjectCard
-              key={project.id} project={project}/>
-            )}
-        </Card.Group>
-        <br/>
-        <br/>
-        <br/>
-      </Container>
+          <div className="huge">
+            My Recent Projects
+          </div>
+          <br/>
+          <br/>
+          <br/>
+          <Card.Group itemsPerRow={2}>
+            {projects.map(project =>
+              <ProjectCard
+                key={project.id} project={project}/>
+              )}
+          </Card.Group>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+        </Container>
+      </>
     )
   }
 }

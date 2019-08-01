@@ -17,12 +17,12 @@ class ProjectCard extends Component  {
         ))
     }
 
-    let tools = ""
-    if (project.tools){
-      tools = project.tools.map(tool => (
-        <div key={tool.index}> {tool} </div>
-      ))
-    }
+    // let tools = ""
+    // if (project.tools){
+    //   tools = project.tools.map(tool => (
+    //     <div key={tool.index}> {tool} </div>
+    //   ))
+    // }
 
 
 
@@ -49,37 +49,37 @@ class ProjectCard extends Component  {
 
 
     return (
-      <Card>
-        <Image src={project.image} />
+      <>
+        <Card>
+          <Image src={project.image} />
 
-        <Card.Content >
-          <Card.Header>
-            <br/>
-            <div className="large">{project.name}</div>
-          </Card.Header>
+          <Card.Content >
+            <Card.Header>
+              <br/>
+              <div className="large">{project.name}</div>
+            </Card.Header>
 
-          <Card.Description className="readable">
-            <h3>{project.type} project</h3>
-            <br/>
-            <br/>
+            <Card.Description className="readable">
+              <h3>{project.type} project</h3>
+              <br/>
 
-            <div className = "left">
-              {project.notes}<br/>
-            </div>
+              <div className = "left">
+                {project.notes}<br/>
+              </div>
 
-            <br/>
-            <h3>Blog Posts </h3>
-            {blogPosts}
+              <h3>Blog Posts </h3>
+              {blogPosts}
 
-          </Card.Description>
-        </Card.Content>
+            </Card.Description>
+          </Card.Content>
 
-        <Card.Content extra className="cardBottom">
-        {demo}
-        {videoUrl}
-        {githubLink}
-        </Card.Content>
-      </Card>
+          <Card.Content extra className="cardBottom">
+          {demo}
+          {videoUrl}
+          {githubLink}
+          </Card.Content>
+        </Card>
+      </>
     )
 
 

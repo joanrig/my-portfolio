@@ -1,14 +1,15 @@
 import React from 'react';
-import { Container } from 'semantic-ui-react'
-import ProjectsContainer from '../containers/ProjectsContainer'
+import { Image } from 'semantic-ui-react'
+import ferris from './ferris.jpg'
+// import NavBar from './NavBar'
 
 
 const Home = () => {
 
   return (
-    <Container className="center">
-      <ProjectsContainer />
-    </Container>
+    <>
+      <Image src={ferris} />
+    </>
   )
 }
 export default Home;

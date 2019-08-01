@@ -20,15 +20,27 @@
 }
 
 .blue {
-  background-color: rgb(48,112,252)
+  background-color: rgb(20,0,136)
 }
 
 .black {
   color: rgb(0,0,0);
 }
 
+.white {
+  color: rgb(255,255,255)
+}
+
 .huge {
-  font-size: 4em;
+  font-size: 4.5em;
+}
+
+.massive {
+  font-size: 3em;
+}
+
+.big {
+  font-size: 2.3em;
 }
 
 .large{
@@ -38,6 +50,10 @@
 .resume {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 1.2em;
+}
+
+.block {
+  background-color: rgb(255,155,0,0.6)
 }
 
 .about {

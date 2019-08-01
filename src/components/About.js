@@ -1,16 +1,22 @@
 import React from 'react';
 import { Container, Image } from 'semantic-ui-react'
+import { Link } from 'react-router-dom'
+import NavBar from './NavBar'
 
 
 const About = () => {
   return (
 
+
     <Container className="about">
+      <NavBar />
       <br/>
 
+      <br/>
       <h1 className="ui block header center">
-        About Me ... Hire Me!
+        Hire Me!
       </h1>
+      <br/>
       <br/>
       <Image src= "https://tinyurl.com/joanrig-pic" floated="left"/>
       <p>
@@ -22,8 +28,14 @@ const About = () => {
       </p>
 
       <p>
-        <b>Now I'm looking for my first job as a web developer, near Washington, D.C. where I live. Here's my <a href="https://www.linkedin.com/in/joanrigdon/">LinkedIn profile</a>!</b>
+        <strong>Now I'm looking for my first job as a web developer</strong> near Washington, D.C. where I live (Maryland side). Here's my <Link to="./resume">Resume!</Link>
       </p>
+      <br/>
+      <Image src="https://www.smartertravel.com/uploads/2018/03/Hero-23-1400x500.png"/>
+      <br/>
+
+
+
 
 
     </Container>
