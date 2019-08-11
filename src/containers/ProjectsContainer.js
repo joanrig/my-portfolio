@@ -88,7 +88,7 @@ class Projects extends Component {
       ],
       video: "",
       demo: "https://hog-iron.herokuapp.com/",
-      notes: "A mock Harry Potter site where you can be sorted into house and sign up for classes. I contributed logic for the sorting act and Boostrap styling for most pages. Built with Rails and Bootstrap on the front end and Rails, ActiveModel and Postgres on the back end.",
+      notes: "A mock Harry Potter site where you can be sorted into a house and sign up for and drop classes. I contributed logic for the sorting hat and Boostrap styling for most pages. Built with Rails and Bootstrap on the front end and Rails, ActiveModel and Postgres on the back end.",
       blogPosts: ""
     }
 
