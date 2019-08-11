@@ -6,7 +6,8 @@
   padding: 40px;
 }
 
-.readable {
+
+.description {
   font-size: 1.3em;
 }
 
@@ -79,6 +80,12 @@
 .about p {
   line-height: 1.5em;
 }
+
+.ferris {
+  image-size: cover;
+}
+
+
 
 
 

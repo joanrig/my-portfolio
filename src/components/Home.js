@@ -8,7 +8,7 @@ const Home = () => {
 
   return (
     <>
-      <Link to='/projects'><Image src={ferris} /></Link>
+      <Link to='/projects'><Image src={ferris} className="ui fluid image ferris"/></Link>
     </>
   )
 }

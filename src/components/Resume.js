@@ -24,14 +24,15 @@ const Resume = () => {
           <a href="mailto: joanrigdon@gmail.com" ><i class="mail icon" /></a>
           <a href="https://www.linkedin.com/in/joanrigdon/"><i class="linkedin icon" /></a>
           <a href="https://medium.com/@joanrigdon"><i class="medium icon" /></a>
+          <a href="https://twitter.com/joan_indiana"><i class="twitter icon" /></a>
         </div>
 
         <h2 className="ui block header center blue">
-          Web Developer with management and teaching experience
+          Web Developer with experience in management, teaching and journalism
         </h2>
 
         <p >
-          Full stack web developer with nine years of experience founding and building my own technology education company, where I developed solid management skills and discovered how much fun it is to learn and teach new programming languages. With experience in Ruby, Rails, JavaScript, and React, I am looking forward to building fun sites and managing entry-level developers. I live near Washington, D.C.
+          Full stack web developer with nine years of experience founding and building my own technology education company, where I developed solid management skills and discovered how much fun it is to learn and teach new programming languages. I love building apps with React.js, Redux and Postgres; I've also built projects with Ruby, Rails,  JavaScript, ActiveRecord, Sinatra and mySQL. As a former journalist with experience covering national policy, I would love to work on fun ways to present statistics and other data for a political campaign, public interest group or a think tank.  I live near Washington, D.C.
         </p>
 
         <h2 className="ui block header center blue">

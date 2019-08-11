@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { Card, Image} from 'semantic-ui-react'
-import NavBar from './NavBar'
-
 
 
 class ProjectCard extends Component  {
@@ -17,15 +15,6 @@ class ProjectCard extends Component  {
           <div key={post.index}><a href={post.link}>{post.title}</a></div>
         ))
     }
-
-    // let tools = ""
-    // if (project.tools){
-    //   tools = project.tools.map(tool => (
-    //     <div key={tool.index}> {tool} </div>
-    //   ))
-    // }
-
-
 
     let videoUrl = ""
     if (project.video){
@@ -54,13 +43,13 @@ class ProjectCard extends Component  {
         <Card>
           <Image src={project.image} />
 
-          <Card.Content >
+          <Card.Content>
             <Card.Header>
               <br/>
               <div className="large">{project.name}</div>
             </Card.Header>
 
-            <Card.Description className="readable">
+            <Card.Description className="description">
               <h3>{project.type} project</h3>
               <br/>
 
