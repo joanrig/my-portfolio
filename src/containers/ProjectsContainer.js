@@ -76,7 +76,7 @@ class Projects extends Component {
       name: "Hog Iron",
       image: "http://www.superhero-therapy.com/wp-content/uploads/2019/06/Sorting-Hat-1.jpg",
       type: "group",
-      contributors: ["Lizzie Chan", "Vinh Do", "Bryn Lastname"],
+      contributors: ["Lizzie Chan", "Vinh Do", "Bryn Bennet"],
       github: {
           mono: "https://github.com/joanrig/Hog-Iron"
         },
