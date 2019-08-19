@@ -41,7 +41,12 @@ class Projects extends Component {
         {
           title: "Adding a React-Redux front-end",
           link: "https://medium.com/@joanrigdon/rails-api-project-part-3-adding-a-front-end-with-react-redux-be6ad25865d6"
-        }
+        },
+        {
+          title: "How I Deployed my React-on-Rails app to Heroku",
+          link: "https://medium.com/@joanrigdon/how-i-deployed-my-react-on-rails-app-to-heroku-9a07cee054e6"
+        },
+
       ]
     }
 
