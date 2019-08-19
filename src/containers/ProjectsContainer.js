@@ -27,6 +27,7 @@ class Projects extends Component {
           mono: ""
         },
       demo: "https://congress-front-end.herokuapp.com",
+      video: "https://www.loom.com/share/7f2536bd3ee84514a88d96a6d242d46e",
       notes: "A guessing game. Search and sort Congress members by party, gender and fun traits like most missed votes! Then guess who's who and click to reveal the answer. You can also search for bills. Built with React, Redux and Semantic React UI on the front end; and a Rails API, ActiveModel and Postgres on the back end.",
       blogPosts: [
         {
