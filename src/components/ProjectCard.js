@@ -35,7 +35,7 @@ class ProjectCard extends Component  {
     let demo = ""
     if (project.demo){
         debugger
-        demo = <a href={project.demo}><i class="desktop icon big"/></a>
+        demo = <a href={project.demo}><i class="desktop icon big" data-tooltip="demo"/></a>
     }
 
 
