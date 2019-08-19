@@ -85,11 +85,6 @@
   image-size: cover;
 }
 
-
-
-
-
-
-
-font-family: 'Noto Sans KR', sans-serif;
-font-family: 'Kreon', serif;
+.demo-button {
+  background-color: white;
+}

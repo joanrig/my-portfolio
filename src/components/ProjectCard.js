@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { Card, Image} from 'semantic-ui-react'
+import { Card, Image, Button } from 'semantic-ui-react'
 
 
 class ProjectCard extends Component  {
+
 
   render(){
 
@@ -33,9 +34,17 @@ class ProjectCard extends Component  {
     }
 
     let demo = ""
+
     if (project.demo){
         debugger
-        demo = <a href={project.demo}><i class="desktop icon big" data-tooltip="demo"/></a>
+        demo =
+        <a href={project.demo}>
+          <Button
+            icon="large desktop"
+            data-tooltip="demo"
+            className="demo-button"
+          />
+        </a>
     }
 
 
