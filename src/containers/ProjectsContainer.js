@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import { Container, Card } from 'semantic-ui-react'
 import ProjectCard from '../components/ProjectCard.js'
 import NavBar from '../components/NavBar'
+import marsScreenshot from './marsScreenshot.png'
+import congressScreenshot from './congressScreenshot.png'
+import hogIronScreenshot from './hogIronScreenshot.png'
+import vacationBidderScreenshot from './vacationBidderScreenshot.png'
 
 
 class Projects extends Component {
@@ -11,7 +15,7 @@ class Projects extends Component {
     let congress = {
       id: 1,
       name: "Who's Who in Congress",
-      image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/vote-lead-01-1520883451.jpg?crop=1.00xw:1.00xh;0,0&resize=640:*",
+      image: congressScreenshot,
       type: "solo",
       tools: [
         "Rails API",
@@ -50,10 +54,11 @@ class Projects extends Component {
       ]
     }
 
+
     let marsRoverPics = {
       id: 2,
-      name: "Mars Rover Photo Browser",
-      image: "https://www.jpl.nasa.gov/images/mars/20170622/PIA01466-16.jpg",
+      name: "Mars Rover Photo Finder",
+      image: marsScreenshot,
       type: "solo",
       tools: [
         "React",
@@ -77,7 +82,7 @@ class Projects extends Component {
     let vacationBidder = {
       id: 3,
       name: "Vacation Bidder",
-      image: "https://images.unsplash.com/photo-1534008897995-27a23e859048?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+      image: vacationBidderScreenshot,
       type: "solo",
       tools: [
         "Ruby on Rails",
@@ -104,7 +109,7 @@ class Projects extends Component {
     let hogIron = {
       id: 4,
       name: "Hog Iron",
-      image: "http://www.superhero-therapy.com/wp-content/uploads/2019/06/Sorting-Hat-1.jpg",
+      image: hogIronScreenshot,
       type: "group",
       contributors: ["Lizzie Chan", "Vinh Do", "Bryn Bennet"],
       github: {

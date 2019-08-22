@@ -36,11 +36,15 @@ const Resume = () => {
         </p>
 
         <h2 className="ui block header center blue">
-          Flatiron Technical Projects
+          Technical Projects
         </h2>
 
         <p>
           <strong>Who’s Who in Congress Game, a React-Redux app using a Rails API and Postres database.<a href="https://github.com/joanrig/congress_api"> Github Back-End</a> | <a href="https://github.com/joanrig/congress_front_end">Github Front-end</a> | <a href="https://www.loom.com/share/7f2536bd3ee84514a88d96a6d242d46e">Video</a></strong><br/>Fetches data on Congress members and bills  from ProPublica, uses Semantic UI React to present data as cards. Search and sort data using logic in Ruby, JavaScript and JSX. Guess who’s who and flip a card to find out!
+        </p>
+
+        <p>
+          <strong>Mars Rover Photo Browser, a React app.<a href="https://github.com/joanrig/mars_rover_pics"> Github</a>  | <a href="https://mars-rover-staging.herokuapp.com/">Demo</a></strong><br/>Browse more than 360,000 photos from NASA's Mars Rover. Built with React.js/ JavaScript/ JSX. it uses Semantic UI React to present data as cards.
         </p>
 
         <p>
