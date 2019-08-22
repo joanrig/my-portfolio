@@ -64,7 +64,7 @@ class Projects extends Component {
           mono: "https://github.com/joanrig/mars_rover_pics"
         },
       video: "",
-      demo: "",
+      demo: "https://mars-rover-staging.herokuapp.com/",
       notes: "Designed for curious kids of all ages, this app  includes basic information about the rovers, route maps, short videos and best of all, an easy way to filter more than 360,000 photos taken by NASA Rovers! Choose a Rover, a date and a camera and then click Get Photos to see amazing photography. Built with React.js. I experimented with using Event Emitters instead of Redux and had a lot of fun playing with timers and Semantic React UI's Transition element.",
       blogPosts: []
     }
