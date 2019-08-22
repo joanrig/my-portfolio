@@ -52,8 +52,8 @@ class Projects extends Component {
 
     let marsRoverPics = {
       id: 2,
-      name: "Mars Rover Pics",
-      image: "https://www.jpl.nasa.gov/images/msl/20160613/pia20602-16.jpg",
+      name: "Mars Rover Photo Browser",
+      image: "https://mars.nasa.gov/system/news_items/main_images/8351_PIA22486-1440.jpg",
       type: "solo",
       tools: [
         "React",

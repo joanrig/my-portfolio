@@ -82,7 +82,7 @@
 }
 
 .ferris {
-  image-size: cover;
+  size: cover;
 }
 
 .demo-button {
