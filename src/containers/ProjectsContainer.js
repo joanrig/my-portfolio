@@ -50,8 +50,27 @@ class Projects extends Component {
       ]
     }
 
-    let vacationBidder = {
+    let marsRoverPics = {
       id: 2,
+      name: "Mars Rover Pics",
+      image: "https://www.jpl.nasa.gov/images/msl/20160613/pia20602-16.jpg",
+      type: "solo",
+      tools: [
+        "React",
+        "Javascript",
+        "Semantic React UI",
+      ],
+      github: {
+          mono: "https://github.com/joanrig/mars_rover_pics"
+        },
+      video: "",
+      demo: "",
+      notes: "Designed for curious kids of all ages, this app  includes basic information about the rovers, route maps, short videos and best of all, an easy way to filter more than 360,000 photos taken by NASA Rovers! Choose a Rover, a date and a camera and then click Get Photos to see amazing photography. Built with React.js. I experimented with using Event Emitters instead of Redux and had a lot of fun playing with timers and Semantic React UI's Transition element.",
+      blogPosts: []
+    }
+
+    let vacationBidder = {
+      id: 3,
       name: "Vacation Bidder",
       image: "https://images.unsplash.com/photo-1534008897995-27a23e859048?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
       type: "solo",
@@ -78,7 +97,7 @@ class Projects extends Component {
     }
 
     let hogIron = {
-      id: 3,
+      id: 4,
       name: "Hog Iron",
       image: "http://www.superhero-therapy.com/wp-content/uploads/2019/06/Sorting-Hat-1.jpg",
       type: "group",
@@ -98,7 +117,7 @@ class Projects extends Component {
     }
 
     let spaceMissions = {
-      id: 4,
+      id: 5,
       name: "Space Missions CLI",
       image: "https://www.jpl.nasa.gov/missions/web/cassini.jpg",
       type: "solo",
@@ -124,7 +143,7 @@ class Projects extends Component {
       ]
     }
 
-    let projects = [congress, vacationBidder, hogIron, spaceMissions]
+    let projects = [congress, marsRoverPics, vacationBidder, hogIron, spaceMissions]
 
     return (
       <>
