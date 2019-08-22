@@ -66,7 +66,12 @@ class Projects extends Component {
       video: "",
       demo: "https://mars-rover-staging.herokuapp.com/",
       notes: "Designed for curious kids of all ages, this app  includes basic information about the rovers, route maps, short videos and best of all, an easy way to filter more than 360,000 photos taken by NASA Rovers! Choose a Rover, a date and a camera and then click Get Photos to see amazing photography. Built with React.js. I experimented with using Event Emitters instead of Redux and had a lot of fun playing with timers and Semantic React UI's Transition element.",
-      blogPosts: []
+      blogPosts: [
+        {
+          title: "Managing State with Event Emitters",
+          link: "https://medium.com/@joanrigdon/managing-state-with-event-emitters-f4125210b7d?sk=0a89f646ede6ef1c82d9fd961b0fe973"
+        }
+      ]
     }
 
     let vacationBidder = {
