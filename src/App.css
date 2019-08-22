@@ -88,3 +88,8 @@
 .demo-button {
   background-color: white;
 }
+
+.card-image {
+  height: 25vw;
+  width: auto;
+}

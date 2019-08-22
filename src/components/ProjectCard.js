@@ -51,7 +51,7 @@ class ProjectCard extends Component  {
     return (
       <>
         <Card>
-          <Image src={project.image} />
+          <Image src={project.image} className="card-image"/>
 
           <Card.Content>
             <Card.Header>
