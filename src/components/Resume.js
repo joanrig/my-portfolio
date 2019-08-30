@@ -21,7 +21,7 @@ const Resume = () => {
         <br/>
 
         <div className="center big">
-          <a href="mailto: joanrigdon@gmail.com" ><i class="mail icon" /></a>
+          <a href="mailto: joan.indiana.lyness@gmail.com" ><i class="mail icon" /></a>
           <a href="https://www.linkedin.com/in/joanrigdon/"><i class="linkedin icon" /></a>
           <a href="https://medium.com/@joanrigdon"><i class="medium icon" /></a>
           <a href="https://twitter.com/joan_indiana"><i class="twitter icon" /></a>
@@ -44,7 +44,7 @@ const Resume = () => {
         </p>
 
         <p>
-          <strong>Mars Rover Photo Browser, a React app.<a href="https://github.com/joanrig/mars_rover_pics"> Github</a>  | <a href="https://mars-rover-staging.herokuapp.com/">Demo</a></strong><br/>Browse more than 360,000 photos from NASA's Mars Rover. Built with React.js/ JavaScript/ JSX. it uses Semantic UI React to present data as cards.
+          <strong>Mars Rover Photo Browser, a React app.<a href="https://github.com/joanrig/mars_rover_pics"> Github</a>  | <a href="https://mars-rover-staging.herokuapp.com/">Demo</a></strong><br/>Browse more than 360,000 photos from NASA's Mars Rover. Built with React.js/ JavaScript/ JSX and Semantic React UI.
         </p>
 
         <p>
@@ -90,6 +90,7 @@ const Resume = () => {
         </h2>
 
         <p>
+          <strong>current courses:</strong> Node.js
           <strong>Flatiron School,</strong> graduated July 2019 / Full Stack Web Development, Ruby on Rails and JavaScript full-time online program<br/>
           <strong>University of California, Berkeley, Master’s of Journalism,</strong> May 1989<br/>
           <strong>Boston College, B.A. English,</strong> May 1986, graduated cum laude in three years while working<br/>
