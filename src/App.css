@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.ui.Card> {
+.ui.Card {
   padding: 40px;
 }
 
@@ -71,7 +71,13 @@
   background-color: rgb(255,155,0,0.6)
 }
 
-.about {
+.about{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 1.4em;
+  color: rgb(153,153,153);
+}
+
+.blog{
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 1.4em;
   color: rgb(153,153,153);
