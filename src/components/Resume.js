@@ -78,7 +78,7 @@ const Resume = () => {
         </p>
         <p>
           <strong>The Wall Street Journal Online, multiple countries, Columnist,</strong> May 1997 - August 1999<br/>
-          Wrote bi-weekly columns about the state of internet technology around the world while bicycling through 26 countries in 26 months, including a month-long ride from Lhasa, Tibet to Everest Base Camp. Lear
+          Wrote bi-weekly columns about the state of internet technology around the world while bicycling through 26 countries in 26 months, including a month-long ride from Lhasa, Tibet to Everest Base Camp. 
         </p>
         <p>
           <strong>The Wall Street Journal, Pittsburgh and San Francisco. Staff Writer,</strong> September 1990 to May 1997<br/>
