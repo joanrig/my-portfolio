@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Image } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 import NavBar from './NavBar'
+import joanrig from './joanrig.jpg';
 
 
 const About = () => {
@@ -16,7 +17,7 @@ const About = () => {
         </h1>
         <br/>
         <br/>
-        <Image src= "https://tinyurl.com/joanrig-pic" floated="left"/>
+        <Image src={joanrig} floated="right"/>
         <p>
           My name is Joan Indiana Lyness. I'm a <a href="http://joanrigdon.com/">formal journalist</a> (wrote under the name Joan Indiana Rigdon for The Wall Street Journal, Red Herring, ForbesWoman and others). During that time I spent two years cycling around the world <a href="http://online.wsj.com/public/resources/documents/info-wsj10forgotten.html">(and wrote about it for The Wall Street Journal Online)</a>. As for the last 10 years? I spent most of them building and running my own afterschool STEM company, where fabulous instructors teach elementary school kids robotics and programming (and other fun things like Storybook Science!).
         </p>
