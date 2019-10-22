@@ -4,16 +4,24 @@ import { Container } from 'semantic-ui-react'
 
 
 class Blog extends Component {
-
-
-componentDidMount(){
-    let posts = fetch(`https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@joanrigdon`)
-      .then(response => response.json())
-      .then(blogs =>  {
-        console.log({blogs})
-      });
-    return posts
+  constructor(props){
+    super(props)
+    this.state = {
+      posts: []
+    }
   }
+
+  componentDidMount(){
+      let url = `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@joanrigdon`
+
+      fetch(url)
+          .then(response => response.json())
+          .then(posts => this.setState({posts: posts}))
+          console.log(this.state.posts)    
+  }
+
+
+
 
   render(){
 
@@ -25,7 +33,7 @@ componentDidMount(){
           <br/>
           <h1 className="center massive" color="white">
             Hire Me!
-            {posts}
+            {this.state.posts}
           </h1>
           <br/>
           <br/>
