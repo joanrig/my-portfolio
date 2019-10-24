@@ -4,22 +4,25 @@ import { Container } from 'semantic-ui-react'
 
 
 class Blog extends Component {
+
   constructor(props){
     super(props)
     this.state = {
       posts: []
     }
+    console.log(this.state)
   }
 
   componentDidMount(){
+
       let url = `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@joanrigdon`
 
       fetch(url)
           .then(response => response.json())
           .then(posts => this.setState({posts: posts}))
-          console.log(this.state.posts)    
+          console.log(this.state.posts)
   }
-
+    debugger
 
 
 

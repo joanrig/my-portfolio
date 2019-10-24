@@ -6,7 +6,9 @@ const NavBar = () => {
 
     <div>
         <br/>
-        <div className='navbar center'>
+        <br/>
+        <br/>
+        <div className='navbar content center sticky' id='navbar' >
           <Link to='/' className="big grey">Home</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <Link to='/projects' className="big grey">Projects</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <Link to='/resume' className="big grey">Resume</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

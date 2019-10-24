@@ -2,6 +2,25 @@
   text-align: center;
 }
 
+.navbar {
+  overflow: hidden;
+  z-index: 2;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .ui.Card {
   padding: 40px;
 }
