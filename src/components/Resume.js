@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Icon } from 'semantic-ui-react'
+import { Container, Icon, Popup, Button } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 import NavBar from './NavBar'
 
@@ -22,11 +22,12 @@ const Resume = () => {
         </div>
         <br/>
 
+
         <div className="center big">
-          <a href="mailto: joan.indiana.lyness@gmail.com" ><i class="mail icon" /></a>
-          <a href="https://www.linkedin.com/in/joanrigdon/"><i class="linkedin icon" /></a>
-          <a href="https://medium.com/@joanrigdon"><i class="medium icon" /></a>
-          <a href="https://twitter.com/joan_indiana"><i class="twitter icon" /></a>
+          <a href="mailto: joan.indiana.lyness@gmail.com" ><Popup content='email me' trigger={<i class="mail icon" />} /></a>
+          <a href="https://www.linkedin.com/in/joanrigdon/"><Popup content='my LinkedIn profile' trigger={<i class="linkedin icon" />} /></a>
+          <a href="https://medium.com/@joanrigdon"><Popup content='Read my Algorithms 101 series on Medium' trigger={<i class="medium icon" />} /></a>
+          <a href="https://twitter.com/joan_indiana"><Popup content='Follow me on Twitter' trigger={<i class="twitter icon" />} /></a>
         </div>
 
         <h2 className="ui block header center blue">
