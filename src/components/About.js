@@ -31,7 +31,10 @@ const About = () => {
         </p>
         <br/>
         <br/>
-        <Image src="https://www.smartertravel.com/uploads/2018/03/Hero-23-1400x500.png"/>
+        <Image src="https://images.unsplash.com/photo-1554438666-8b9c968821a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"/>
+        <div className="right">
+          <h6>Photo by <a href="https://unsplash.com/@riddywankenobi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ridwan Meah</a> on <a href="http://www.unspalsh.com">Unsplash</a></h6>
+        </div>
         <br/>
         <br/>
         <br/>

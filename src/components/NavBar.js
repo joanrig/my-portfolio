@@ -10,7 +10,6 @@ const NavBar = () => {
 
           <br/>
           <div className="black center">
-            <Sticky>
 
                 <div className='navbar center'>
                   <Link to='/' className="big grey">Home</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -23,7 +22,6 @@ const NavBar = () => {
               <br/>
               <br/>
 
-            </Sticky>
           </div>
 
 

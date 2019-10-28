@@ -92,6 +92,10 @@
   line-height: 1.5em;
 }
 
+.right {
+  text-align: right;
+}
+
 .ferris {
   size: cover;
 }
