@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Home from './components/Home'
-import ProjectsContainer from './containers/ProjectsContainer'
-import Resume from './components/Resume'
-import About from './components/About'
-import Blog from './components/Blog'
+import Home from './Features/Home/Home'
+import ProjectsContainer from './Features/Projects/ProjectsContainer'
+import Resume from './Features/Resume/Resume'
+import About from './Features/About/About'
+import Blog from './Features/Blog/Blog'
 
 
 

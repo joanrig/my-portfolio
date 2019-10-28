@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Image } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
-import NavBar from './NavBar'
+import NavBar from '../NavBar'
 import joanrig from './joanrig.jpg';
 
 

@@ -1,19 +1,13 @@
-import React, { Component } from 'react';
-import { Container, Card, Sticky, Breadcrumb } from 'semantic-ui-react'
-import ProjectCard from '../components/ProjectCard.js'
-import NavBar from '../components/NavBar'
+
 import marsScreenshot from './marsScreenshot.png'
 import congressScreenshot from './congressScreenshot.png'
 import hogIronScreenshot from './hogIronScreenshot.png'
 import vacationBidderScreenshot from './vacationBidderScreenshot.png'
 
 
-class Projects extends Component {
 
 
-  render(){
-
-    let congress = {
+    const congress = {
       id: 1,
       name: "Who's Who in Congress",
       image: congressScreenshot,
@@ -56,7 +50,7 @@ class Projects extends Component {
     }
 
 
-    let marsRoverPics = {
+    const marsRoverPics = {
       id: 2,
       name: "Mars Rover Photo Finder",
       image: marsScreenshot,
@@ -80,7 +74,7 @@ class Projects extends Component {
       ]
     }
 
-    let vacationBidder = {
+    const vacationBidder = {
       id: 3,
       name: "Vacation Bidder",
       image: vacationBidderScreenshot,
@@ -107,7 +101,7 @@ class Projects extends Component {
       ]
     }
 
-    let hogIron = {
+    const hogIron = {
       id: 4,
       name: "Hog Iron",
       image: hogIronScreenshot,
@@ -127,7 +121,7 @@ class Projects extends Component {
       blogPosts: ""
     }
 
-    let spaceMissions = {
+    const spaceMissions = {
       id: 5,
       name: "Space Missions CLI",
       image: "https://www.jpl.nasa.gov/missions/web/cassini.jpg",
@@ -154,41 +148,4 @@ class Projects extends Component {
       ]
     }
 
-    let projects = [congress, marsRoverPics, vacationBidder, hogIron, spaceMissions]
-
-    return (
-      <>
-        <NavBar/>
-        <Container className="center">
-          <br/>
-          <br/>
-          <br/>
-
-          <div className="massive grey">
-            <Sticky>
-              My Recent Projects
-            </Sticky>
-          </div>
-          <br/>
-          <br/>
-
-          <br/>
-          <br/>
-          <Card.Group itemsPerRow={2}>
-            {projects.map(project =>
-              <ProjectCard
-                key={project.id} project={project} padding="20px"/>
-              )}
-          </Card.Group>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-        </Container>
-      </>
-    )
-  }
-}
-
-export default Projects;
+    export const projectsList = [congress, marsRoverPics, vacationBidder, hogIron, spaceMissions]

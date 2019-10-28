@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import { Sticky, Breadcrumb } from 'semantic-ui-react'
 
 const NavBar = () => {
   return (
