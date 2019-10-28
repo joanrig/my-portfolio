@@ -1,23 +1,33 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
+import { Sticky, Breadcrumb } from 'semantic-ui-react'
 
 const NavBar = () => {
   return (
 
     <div>
         <br/>
-        <br/>
-        <br/>
-        <div className='navbar content center sticky' id='navbar' >
-          <Link to='/' className="big grey">Home</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <Link to='/projects' className="big grey">Projects</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <Link to='/resume' className="big grey">Resume</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <Link to='/blog' className="big grey">Posts</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <a href='https://medium.com/@joanrigdon' className="big grey">Blog</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <Link to='/about' className="big grey">About</Link>
+
           <br/>
-          <br/>
-        </div>
+          <div className="black center">
+            <Sticky>
+
+                <div className='navbar center'>
+                  <Link to='/' className="big grey">Home</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <Link to='/projects' className="big grey">Projects</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <Link to='/resume' className="big grey">Resume</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <Link to='/blog' className="big grey">Posts</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href='https://medium.com/@joanrigdon' className="big grey">Blog</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <Link to='/about' className="big grey">About</Link>
+                </div>
+
+              <br/>
+              <br/>
+
+            </Sticky>
+          </div>
+
+
     </div>
   );
 };

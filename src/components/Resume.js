@@ -32,7 +32,7 @@ const Resume = () => {
         </h2>
 
         <p >
-          Full stack web developer with nine years of experience founding and building my own technology education company, where I developed solid management skills and discovered how much fun it is to learn and teach new programming languages. I love building apps with React.js, Redux and Postgres; I've also built projects with Ruby, Rails,  JavaScript, ActiveRecord, Sinatra and mySQL. As a former journalist with experience covering national policy, I would love to work on fun ways to present statistics and other data for a political campaign, public interest group or a think tank.  I live near Washington, D.C.
+          Full stack web developer with nine years of experience founding and building my own technology education company, where I developed solid management skills and discovered how much fun it is to learn and teach new programming languages. I love building apps with React.js, Redux and Postgres; I've also built projects with Ruby, Rails,  JavaScript, ActiveRecord, Sinatra and mySQL. As a former journalist with experience covering national policy, I would love to work on fun ways to present statistics and other data for a political publication, public interest group or a think tank.  I live near Washington, D.C.
         </p>
 
         <h2 className="ui block header center blue">
@@ -78,7 +78,7 @@ const Resume = () => {
         </p>
         <p>
           <strong>The Wall Street Journal Online, multiple countries, Columnist,</strong> May 1997 - August 1999<br/>
-          Wrote bi-weekly columns about the state of internet technology around the world while bicycling through 26 countries in 26 months, including a month-long ride from Lhasa, Tibet to Everest Base Camp. 
+          Wrote bi-weekly columns about the state of internet technology around the world while bicycling through 26 countries in 26 months, including a month-long ride from Lhasa, Tibet to Everest Base Camp.
         </p>
         <p>
           <strong>The Wall Street Journal, Pittsburgh and San Francisco. Staff Writer,</strong> September 1990 to May 1997<br/>

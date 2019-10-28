@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Card } from 'semantic-ui-react'
+import { Container, Card, Sticky, Breadcrumb } from 'semantic-ui-react'
 import ProjectCard from '../components/ProjectCard.js'
 import NavBar from '../components/NavBar'
 import marsScreenshot from './marsScreenshot.png'
@@ -9,6 +9,7 @@ import vacationBidderScreenshot from './vacationBidderScreenshot.png'
 
 
 class Projects extends Component {
+
 
   render(){
 
@@ -164,7 +165,9 @@ class Projects extends Component {
           <br/>
 
           <div className="massive grey">
-            My Recent Projects
+            <Sticky>
+              My Recent Projects
+            </Sticky>
           </div>
           <br/>
           <br/>
