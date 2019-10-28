@@ -1,5 +1,6 @@
 import React from 'react';
-import { Container } from 'semantic-ui-react'
+import { Container, Icon } from 'semantic-ui-react'
+import { Link } from 'react-router-dom'
 import NavBar from './NavBar'
 
 
@@ -13,6 +14,7 @@ const Resume = () => {
       <br/>
       <br/>
       <Container className="resume">
+      <Link to="/files/lyness-resume.pdf" target="_blank" download className="download"><Icon name="download"/>Click to download</Link>
         <br/>
         <br/>
         <div className="center huge">

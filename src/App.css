@@ -68,6 +68,10 @@
   color:white;
 }
 
+.download {
+  float:right;
+}
+
 .block {
   background-color: rgb(255,155,0,0.6)
 }
