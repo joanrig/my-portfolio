@@ -10,6 +10,15 @@
   padding: 40px;
 }
 
+.blogcard {
+  /* height: auto;
+  max-height: 350px;
+  width: auto;
+  max-width: 250px; */
+
+}
+
+
 
 .description {
   font-size: 1.3em;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Icon, Popup, Button } from 'semantic-ui-react'
+import { Container, Icon, Popup } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 import NavBar from '../NavBar'
 

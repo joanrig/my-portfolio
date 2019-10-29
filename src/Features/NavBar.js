@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { Container, Sticky } from 'semantic-ui-react'
 
 const NavBar = () => {
+
   return (
       <>
 
@@ -25,7 +26,6 @@ const NavBar = () => {
               <br/>
               <br/>
           </div>
-
           </Container>
         </Sticky>
       </>

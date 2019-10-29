@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import NavBar from '../NavBar'
-import { Container } from 'semantic-ui-react'
+import { Container, Card } from 'semantic-ui-react'
+import BlogCard from './BlogCard'
 
 
 class Blog extends Component {
@@ -18,13 +19,17 @@ class Blog extends Component {
 
     fetch(url)
       .then(response => response.json())
-      .then(posts => console.log(posts))
+      .then(posts => this.setState({ posts: posts["items"]}))
   }
 
 
 
 
+
   render(){
+    let posts = this.state.posts.filter(post => post.categories.length > 0)
+
+    console.log(posts)
 
     return(
       <div>
@@ -32,9 +37,13 @@ class Blog extends Component {
         <Container className="blog">
           <br/>
           <br/>
-          <h1 className="center massive" color="white">
-            {this.state.posts[0]}
-          </h1>
+          <Card.Group itemsPerRow={2}>
+            {posts.map(post =>
+              <BlogCard
+                key={post["id"]} {...post} />
+              )}
+          </Card.Group>
+
           <br/>
           <br/>
         </Container>

@@ -4,28 +4,57 @@ import { Card, Image } from 'semantic-ui-react'
 
 class BlogCard extends Component  {
 
+  handleClick = () => {
+
+  }
 
   render(){
 
+    let months = {
+      1: "Jan.",
+      2: "Feb.",
+      3: "March",
+      4: "April",
+      5: "May",
+      6: "June",
+      7: "July",
+      8: "Aug.",
+      9: "Sept.",
+      10: "Oct.",
+      11: "Nov.",
+      12: "Dec."
+    }
 
-    let post = this.props.post
+    let date = this.props.pubDate.split(' ')[0].split('-')
+    // ["2019", "10", "02"]
+
+    let monthNum = parseInt(date[1])
+    let month = months[monthNum]
+    let day = parseInt(date[2])
+    let year = parseInt(date[0])
+
+    let pubDate = month + ' ' + day +', ' + year
+
+
 
 
 
     return (
       <>
-        <Card>
-          <Image src={post.image} className="card-image"/>
+        <Card onClick={this.handleClick}>
 
+          <Image className="blogcard" src={this.props.thumbnail} wrapped ui={false}  />
           <Card.Content>
             <Card.Header>
-              <br/>
-              <div className="large">{post.title}</div>
+              <a href={this.props.link}>{this.props.title}</a>
             </Card.Header>
 
           </Card.Content>
 
           <Card.Content extra className="cardBottom">
+            {this.props.description}
+            <h6>published {pubDate}</h6>
+            <br/>
 
           </Card.Content>
         </Card>
@@ -39,3 +68,5 @@ class BlogCard extends Component  {
 }
 
 export default BlogCard;
+
+//          <Image src={post.image} className="card-image"/>
