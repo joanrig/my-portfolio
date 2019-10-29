@@ -7,7 +7,6 @@ class ProjectCard extends Component  {
 
   render(){
 
-
     let project = this.props.project
 
     let blogPosts = ""

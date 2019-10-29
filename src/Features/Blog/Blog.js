@@ -14,15 +14,13 @@ class Blog extends Component {
   }
 
   componentDidMount(){
+    let url = `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@joanrigdon`
 
-      let url = `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@joanrigdon`
-
-      fetch(url)
-          .then(response => response.json())
-          .then(posts => this.setState({posts: posts}))
-          console.log(this.state.posts)
+    fetch(url)
+      .then(response => response.json())
+      .then(posts => console.log(posts))
   }
-    debugger
+
 
 
 
@@ -35,8 +33,7 @@ class Blog extends Component {
           <br/>
           <br/>
           <h1 className="center massive" color="white">
-            Hire Me!
-            {this.state.posts}
+            {this.state.posts[0]}
           </h1>
           <br/>
           <br/>
@@ -49,9 +46,3 @@ class Blog extends Component {
 }
 
 export default Blog
-
-
-
-
-    //
-    // let posts = fetch(`https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@joanrigdon`)
