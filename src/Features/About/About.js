@@ -30,7 +30,6 @@ const About = () => {
           <strong>Now I'm looking for my first job as a web developer</strong> near Washington, D.C. where I live (Maryland side). Here's my <Link to="./resume">Resume!</Link>
         </p>
         <br/>
-        <br/>
         <Image src="https://images.unsplash.com/photo-1554438666-8b9c968821a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"/>
         <div className="right">
           <h6>Photo by <a href="https://unsplash.com/@riddywankenobi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ridwan Meah</a> on <a href="http://www.unspalsh.com">Unsplash</a></h6>

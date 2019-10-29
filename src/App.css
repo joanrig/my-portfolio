@@ -11,11 +11,8 @@
 }
 
 .blogcard {
-  height: auto;
-  max-height: 550px;
+  height: 300;
   width: auto;
-  max-width: 2000px;
-
 }
 
 

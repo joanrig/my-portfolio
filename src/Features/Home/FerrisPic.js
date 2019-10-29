@@ -4,10 +4,10 @@ import ferris from './ferris.jpg'
 
 
 const divStyle = {
-  width: '135%',
+  width: '115%',
   height: '1100px',
   backgroundImage: `url(${ferris})`,
-  backgroundSize: 'cover'
+  backgroundSize: 'cover',
 };
 
 const FerrisPic = () => {

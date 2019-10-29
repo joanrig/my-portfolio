@@ -40,7 +40,7 @@ class BlogCard extends Component  {
     return (
       <>
         <Card>
-          <Image className="blogcard" src={this.props.thumbnail} />
+          <img className="blogCard" src={this.props.thumbnail} height={300}  alt={this.props.title}/>
           <Card.Content>
             <Card.Header>
               <a href={this.props.link}>{this.props.title}</a>
