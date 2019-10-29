@@ -22,14 +22,9 @@ class Blog extends Component {
       .then(posts => this.setState({ posts: posts["items"]}))
   }
 
-
-
-
-
   render(){
     let posts = this.state.posts.filter(post => post.categories.length > 0)
 
-    console.log(posts)
 
     return(
       <div>
@@ -37,6 +32,20 @@ class Blog extends Component {
         <Container className="blog">
           <br/>
           <br/>
+          <div className="big grey center">
+              My Recent Blog Posts
+          </div>
+          <br/>
+          <br/>
+
+          <p>I'm a regular contributor to <a href="https://medium.com/javascript-in-plain-english">JavaScript in Plain English</a> and <a href="https://medium.com/swlh">The Startup</a> on Medium.com. You can <a href="https://medium.com/@joanrigdon">see all my posts here.</a></p>
+
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+
+
           <Card.Group itemsPerRow={2}>
             {posts.map(post =>
               <BlogCard

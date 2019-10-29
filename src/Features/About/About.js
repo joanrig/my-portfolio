@@ -19,7 +19,7 @@ const About = () => {
         <br/>
         <Image src={joanrig} floated="right"/>
         <p>
-          My name is Joan Indiana Lyness. I'm a <a href="http://joanrigdon.com/">formal journalist</a> (wrote under the name <a href="http://www.joanrigdon.com">Joan Indiana Rigdon</a> for The Wall Street Journal, Red Herring, ForbesWoman and others). During that time I spent two years cycling around the world <a href="http://online.wsj.com/public/resources/documents/info-wsj10forgotten.html">(and wrote about it for The Wall Street Journal Online)</a>. As for the last 10 years? I spent most of them building and running my own afterschool STEM company, where fabulous instructors teach elementary school kids robotics and programming (and other fun things like Storybook Science!).
+          My name is Joan Indiana Lyness. I'm a <a href="http://joanrigdon.com/">former journalist</a> (wrote under the name <a href="http://www.joanrigdon.com">Joan Indiana Rigdon</a> for <i>The Wall Street Journal</i>, <i>Red Herring</i>, <i>ForbesWoman</i> and others). During that time I spent two years cycling around the world <a href="http://online.wsj.com/public/resources/documents/info-wsj10forgotten.html">(and wrote about it for The Wall Street Journal Online)</a>. As for the last 10 years? I spent most of them building and running my own afterschool STEM company, where fabulous instructors teach elementary school kids robotics and programming (and other fun things like Storybook Science!).
         </p>
         <br/>
         <p>

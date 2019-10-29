@@ -5,9 +5,6 @@ import ReactHtmlParser from 'react-html-parser';
 
 class BlogCard extends Component  {
 
-  handleClick = () => {
-
-  }
 
   render(){
 
@@ -37,16 +34,12 @@ class BlogCard extends Component  {
     let pubDate = month + ' ' + day +', ' + year
 
     console.log(this.props)
-    let content = `<p>${this.props.content.split('snippet">')[1].split('</div>')}`
-
-
-
-
+    let content = `<p>${this.props.content.split('snippet">')[1].split('</div>,')}`
+    console.log(content)
 
     return (
       <>
-        <Card onClick={this.handleClick}>
-
+        <Card>
           <Image className="blogcard" src={this.props.thumbnail} />
           <Card.Content>
             <Card.Header>
@@ -56,8 +49,8 @@ class BlogCard extends Component  {
           </Card.Content>
 
           <Card.Content extra className="cardBottom">
-            { ReactHtmlParser(content)}
-            <h6>published {pubDate}</h6>
+            <p>{ ReactHtmlParser(content)}</p>
+            <h6 className="right">published {pubDate}</h6>
             <br/>
 
           </Card.Content>

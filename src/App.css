@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.navbar {
+.black-background {
   background-color: rgb(10,10,16)
 }
 
@@ -14,10 +14,9 @@
   height: auto;
   max-height: 550px;
   width: auto;
-  max-width: 50px;
+  max-width: 2000px;
 
 }
-
 
 
 .description {

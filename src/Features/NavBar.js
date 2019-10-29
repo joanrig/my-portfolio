@@ -9,7 +9,7 @@ const NavBar = () => {
 
         <Sticky>
 
-          <Container className="navbar">
+          <Container className="black-background">
           <br/>
           <br/>
 
