@@ -2,6 +2,9 @@
   text-align: center;
 }
 
+.navbar {
+  background-color: rgb(10,10,16)
+}
 
 .ui.Card {
   padding: 40px;

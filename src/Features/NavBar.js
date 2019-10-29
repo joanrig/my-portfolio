@@ -1,13 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
+import { Container, Sticky } from 'semantic-ui-react'
 
 const NavBar = () => {
   return (
+      <>
 
-    <div>
-        <br/>
+        <Sticky>
 
+          <Container className="navbar">
           <br/>
+          <br/>
+
           <div className="black center">
 
                 <div className='navbar center'>
@@ -20,12 +24,12 @@ const NavBar = () => {
 
               <br/>
               <br/>
-
           </div>
 
-
-    </div>
-  );
-};
+          </Container>
+        </Sticky>
+      </>
+  )
+}
 
 export default NavBar;
