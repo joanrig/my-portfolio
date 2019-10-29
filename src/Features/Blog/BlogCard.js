@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Card, Image } from 'semantic-ui-react'
+import ReactHtmlParser from 'react-html-parser';
 
 
 class BlogCard extends Component  {
@@ -35,6 +36,9 @@ class BlogCard extends Component  {
 
     let pubDate = month + ' ' + day +', ' + year
 
+    console.log(this.props)
+    let content = `<p>${this.props.content.split('snippet">')[1].split('</div>')}`
+
 
 
 
@@ -43,7 +47,7 @@ class BlogCard extends Component  {
       <>
         <Card onClick={this.handleClick}>
 
-          <Image className="blogcard" src={this.props.thumbnail} wrapped ui={false}  />
+          <Image className="blogcard" src={this.props.thumbnail} />
           <Card.Content>
             <Card.Header>
               <a href={this.props.link}>{this.props.title}</a>
@@ -52,7 +56,7 @@ class BlogCard extends Component  {
           </Card.Content>
 
           <Card.Content extra className="cardBottom">
-            {this.props.description}
+            { ReactHtmlParser(content)}
             <h6>published {pubDate}</h6>
             <br/>
 
