@@ -33,7 +33,8 @@ class Carousel extends Component {
       slidesPerRow: 3,
       adaptiveHeight: true,
       autoplay: true,
-      autoplaySpeed: 3000
+      autoplaySpeed: 3000,
+      
     }
 
 

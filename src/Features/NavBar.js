@@ -6,13 +6,10 @@ const NavBar = () => {
 
   return (
       <>
-
         <Sticky>
-
           <Container className="black-background">
           <br/>
           <br/>
-
           <div className="black center">
 
                 <div className='navbar center'>

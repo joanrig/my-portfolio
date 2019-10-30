@@ -29,7 +29,7 @@ class Projects extends Component {
   render(){
     let isMobile
     const width = this.state.width
-    width <= 500 ? isMobile = true : isMobile = false
+    width <= 850 ? isMobile = true : isMobile = false
 
 
     let itemsPerRow

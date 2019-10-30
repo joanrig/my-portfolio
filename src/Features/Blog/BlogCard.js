@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Card, Image } from 'semantic-ui-react'
-import ReactHtmlParser from 'react-html-parser';
+import { Card } from 'semantic-ui-react'
+
 
 
 class BlogCard extends Component  {
@@ -49,7 +49,7 @@ class BlogCard extends Component  {
           </Card.Content>
 
           <Card.Content extra className="right">
-            <p>published {pubDate}</p>
+            <p className="small">published {pubDate}</p>
           </Card.Content>
         </Card>
       </>
@@ -62,5 +62,3 @@ class BlogCard extends Component  {
 }
 
 export default BlogCard;
-
-//          <Image src={post.image} className="card-image"/>
