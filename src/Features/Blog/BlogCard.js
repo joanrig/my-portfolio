@@ -40,7 +40,7 @@ class BlogCard extends Component  {
     return (
       <>
         <Card>
-          <img className="blogCard" src={this.props.thumbnail} height={300}  alt={this.props.title}/>
+          <img className="blogCard" src={this.props.thumbnail} height={250}  alt={this.props.title}/>
           <Card.Content>
             <Card.Header>
               <a href={this.props.link}>{this.props.title}</a>
@@ -49,10 +49,7 @@ class BlogCard extends Component  {
           </Card.Content>
 
           <Card.Content extra className="cardBottom">
-            <p>{ ReactHtmlParser(content)}</p>
-            <h6 className="right">published {pubDate}</h6>
-            <br/>
-
+            {pubDate}
           </Card.Content>
         </Card>
       </>
