@@ -1,7 +1,8 @@
 import React from 'react';
-import { Container, Icon, Popup } from 'semantic-ui-react'
+import { Container, Icon, Popup, Image } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 import NavBar from '../NavBar'
+
 
 
 const Resume = () => {
@@ -18,7 +19,11 @@ const Resume = () => {
         <br/>
         <br/>
         <div className="center huge">
-          Joan Indiana Lyness<br/><br/><br/><br/>
+          Joan Indiana Lyness
+          <br/>
+          <br/>
+          <br/>
+          <br/>
         </div>
         <br/>
 
@@ -93,7 +98,6 @@ const Resume = () => {
         </h2>
 
         <p>
-          <strong>current courses:</strong> Node.js
           <strong>Flatiron School,</strong> graduated July 2019 / Full Stack Web Development, Ruby on Rails and JavaScript full-time online program<br/>
           <strong>University of California, Berkeley, Master’s of Journalism,</strong> May 1989<br/>
           <strong>Boston College, B.A. English,</strong> May 1986, graduated cum laude in three years while working<br/>

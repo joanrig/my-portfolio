@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import { Container, Sticky } from 'semantic-ui-react'
+import { Container, Sticky, Image } from 'semantic-ui-react'
+import joanrig from './joan-memoji.png'
 
 const NavBar = () => {
 
@@ -8,11 +9,12 @@ const NavBar = () => {
       <>
         <Sticky>
           <Container className="black-background">
-          <br/>
-          <br/>
-          <div className="black center">
 
-                <div className='navbar center'>
+          <br/>
+          <br/>
+          <div className="black center" >
+
+                <div className='navbar center' position="relative">
                   <Link to='/' className="big grey">Home</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   <Link to='/projects' className="big grey">Projects</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   <Link to='/resume' className="big grey">Resume</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

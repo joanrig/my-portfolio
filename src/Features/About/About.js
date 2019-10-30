@@ -23,12 +23,13 @@ const About = () => {
         </p>
         <br/>
         <p>
-          It was a lot of fun teaching kids the basics of programming. When I saw how good even 8-year-olds could be, I thought maybe I should learn about it myself! Early this year, I enrolled in the full-time, online software engineering program at The Flatiron School. I just graduated (July 2019). I'm using this site to showcase some of the projects I created at Flatiron.
+          It was a lot of fun teaching kids the basics of programming. When I saw how good even 8-year-olds could be, I thought maybe I should learn more about it myself! This summer, I graduated from the full-time, online software engineering program at The Flatiron School. I'm using this site to showcase some of the projects I created at Flatiron.
         </p>
         <br/>
         <p>
           <strong>Now I'm looking for my first job as a web developer</strong> near Washington, D.C. where I live (Maryland side). Here's my <Link to="./resume">Resume!</Link>
         </p>
+        <br/>
         <br/>
         <Image src="https://images.unsplash.com/photo-1554438666-8b9c968821a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"/>
         <div className="right">
