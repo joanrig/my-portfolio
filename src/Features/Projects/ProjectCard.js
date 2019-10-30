@@ -38,7 +38,8 @@ class ProjectCard extends Component  {
         demo =
         <a href={project.demo}>
           <Button
-            icon="large desktop"
+            icon="play"
+            color="green"
             data-tooltip="demo"
             className="demo-button"
           />
@@ -58,6 +59,9 @@ class ProjectCard extends Component  {
             </Card.Header>
 
             <Card.Description className="description">
+              {demo}
+              {videoUrl}
+              {githubLink}
               <h3>{project.type} project</h3>
               <br/>
 
@@ -72,9 +76,7 @@ class ProjectCard extends Component  {
           </Card.Content>
 
           <Card.Content extra className="cardBottom">
-          {demo}
-          {videoUrl}
-          {githubLink}
+
           </Card.Content>
         </Card>
       </>

@@ -15,7 +15,7 @@ const Resume = () => {
       <br/>
       <br/>
       <Container className="resume">
-      <Link to="/files/lyness-resume.pdf" target="_blank" download className="download"><Icon name="download"/>download</Link>
+      <Link to="/files/lyness-resume.pdf" target="_blank" download className="download"><Icon name="big download"/><h3>PDF</h3></Link>
         <br/>
         <br/>
         <div className="center huge">
@@ -36,11 +36,35 @@ const Resume = () => {
         </div>
 
         <h2 className="ui block header center blue">
-          Web Developer with experience in management, teaching and journalism
+          Web Developer with experience in management, journalism and education
         </h2>
 
         <p >
           Full stack web developer with nine years of experience founding and building my own technology education company, where I developed solid management skills and discovered how much fun it is to learn and teach new programming languages. I love building apps with React.js, Redux and Postgres; I've also built projects with Ruby, Rails,  JavaScript, ActiveRecord, Sinatra and mySQL. As a former journalist with experience covering national policy, I would love to work on fun ways to present statistics and other data for a political publication, public interest group or a think tank.  I live near Washington, D.C.
+        </p>
+
+        <h2 className="ui block header center blue">
+          Work Experience
+        </h2>
+        <p>
+        <strong>The Great Adventure Lab, Silver Spring, Md., Founder and managing partner,</strong> Aug. 2010 to present<br/>
+          Bootstrapped an after school enrichment company with an initial investment of $3,000 in netbooks and robotics kits. Grew revenues to more than $400k in two years during a recession. Expanded to offer camps, events and birthday parties. Hired staff, recruited partners, set up processes so the company mostly runs without me. We’ve taught more than 20k kids how to program.
+        </p>
+        <p>
+          <strong>Joan Indiana Rigdon Freelance, Silver Spring, Md., Freelance magazine writer and columnist,</strong> Dec. 2001 - April 2012<br/>
+          Wrote cover stories about IT, gun rights, education, copyright law, biotechnology, management and other topics for magazines including ForbesWoman, Washington Lawyer and CIO Magazine.
+        </p>
+        <p>
+          <strong>Red Herring Magazine, San Francisco, Ca, Section Editor,</strong> April 2000 - Sep. 2001<br/>
+          Hired reporters and freelancers; produced a bi-weekly section about management strategies.
+        </p>
+        <p>
+          <strong>The Wall Street Journal Online, multiple countries, Columnist,</strong> May 1997 - August 1999<br/>
+          Wrote bi-weekly columns about the state of internet technology around the world while bicycling through 26 countries in 26 months, including a month-long ride from Lhasa, Tibet to Everest Base Camp.
+        </p>
+        <p>
+          <strong>The Wall Street Journal, Pittsburgh and San Francisco. Staff Writer,</strong> September 1990 to May 1997<br/>
+          Wrote front-page stories and hundreds of features and news stories about topics including technology, management and race.
         </p>
 
         <h2 className="ui block header center blue">
@@ -67,30 +91,6 @@ const Resume = () => {
 
         <p>
           <strong>Hog-Iron,  A group project : Harry Potter website. Built with Rails and ActiveRecord.<a href= "https://github.com/joanrig/Hog-Iron"> Github </a> | <a href="https://hog-iron.herokuapp.com/"> Demo </a></strong><br/>I contributed Ruby logic for sorting users into houses; and used Bootstrap to style most of the app’s pages.
-        </p>
-
-        <h2 className="ui block header center blue">
-          Work Experience
-        </h2>
-        <p>
-        <strong>The Great Adventure Lab, Silver Spring, Md., Founder and managing partner,</strong> Aug. 2010 to present<br/>
-          Bootstrapped an after school enrichment company with an initial investment of $3,000 in netbooks and robotics kits. Grew revenues to more than $400k in two years during a recession. Expanded to offer camps, events and birthday parties. Hired staff, recruited partners, set up processes so the company mostly runs without me. We’ve taught more than 20k kids how to program.
-        </p>
-        <p>
-          <strong>Joan Indiana Rigdon Freelance, Silver Spring, Md., Freelance magazine writer and columnist,</strong> Dec. 2001 - April 2012<br/>
-          Wrote cover stories about IT, gun rights, education, copyright law, biotechnology, management and other topics for magazines including ForbesWoman, Washington Lawyer and CIO Magazine.
-        </p>
-        <p>
-          <strong>Red Herring Magazine, San Francisco, Ca, Section Editor,</strong> April 2000 - Sep. 2001<br/>
-          Hired reporters and freelancers; produced a bi-weekly section about management strategies.
-        </p>
-        <p>
-          <strong>The Wall Street Journal Online, multiple countries, Columnist,</strong> May 1997 - August 1999<br/>
-          Wrote bi-weekly columns about the state of internet technology around the world while bicycling through 26 countries in 26 months, including a month-long ride from Lhasa, Tibet to Everest Base Camp.
-        </p>
-        <p>
-          <strong>The Wall Street Journal, Pittsburgh and San Francisco. Staff Writer,</strong> September 1990 to May 1997<br/>
-          Wrote front-page stories and hundreds of features and news stories about topics including technology, management and race.
         </p>
 
         <h2 className="ui block header center blue education">
