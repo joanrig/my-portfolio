@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import { Container, Sticky, Image } from 'semantic-ui-react'
-import joanrig from './joan-memoji.png'
+import { Container, Sticky } from 'semantic-ui-react'
+
 
 const NavBar = () => {
 

@@ -2,7 +2,10 @@ import React from 'react';
 import { Container, Image } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 import NavBar from '../NavBar'
+import ScrollText from 'react-scroll-text'
 import joanrig from './joanrig.jpg';
+import Fade from './Fade'
+
 
 
 const About = () => {
@@ -12,9 +15,12 @@ const About = () => {
       <Container className="about">
         <br/>
         <br/>
-        <h1 className="center massive">
-          Hire Me!
-        </h1>
+        <ScrollText>
+          <h1 className="center massive">
+            Hire Me!
+          </h1>
+        </ScrollText>
+
         <br/>
         <br/>
         <Image height={200} src={joanrig} floated="right"/>
@@ -38,6 +44,13 @@ const About = () => {
         <br/>
         <br/>
         <br/>
+        <br/>
+        <br/>
+        <br/>
+        <p>Finally, here's solid evidence of my management skills. Notice how I motivate, delegate and redirect while refraining from taking over, so my workers can learn from their own mistakes. </p>
+        <br/>
+        <iframe title="teamwork" src="https://player.vimeo.com/video/2529127" width="640" height="483" frameborder="0" allow="autoplay; fullscreen" allowfullscreen float="right"></iframe>
+        <p><a href="https://vimeo.com/2529127">Teamwork</a> from <a href="https://vimeo.com/user1040349">Eric Lyness</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
         <br/>
         <br/>
 
