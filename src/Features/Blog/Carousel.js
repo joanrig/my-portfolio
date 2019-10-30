@@ -26,25 +26,24 @@ class Carousel extends Component {
 
 
     var settings = {
-      dots: true,
+
       infinite: true,
-      speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
       slidesPerRow: 3,
       adaptiveHeight: true,
+      autoplay: true,
       autoplaySpeed: 3000
     }
 
 
 
     return (
-
       <>
         <NavBar />
         <Container className="blog">
           <br/>
-          <br/>
+
           <div className="big grey center">
               My Recent Blog Posts
           </div>
@@ -53,7 +52,7 @@ class Carousel extends Component {
           <br/>
           <p>I'm a regular contributor to <a href="https://medium.com/javascript-in-plain-english">JavaScript in Plain English</a> and <a href="https://medium.com/swlh">The Startup</a> on Medium.com. You can <a href="https://medium.com/@joanrigdon">see all my posts here.</a></p>
 
-          <p>If you're curious my first career, as a journalist, you can find <a href="http://www.joanrigdon.com/clips.html">my clips</a> here.</p>
+          <p>If you're curious about the stories I wrote when I was a journalist, you can find <a href="http://www.joanrigdon.com/clips.html">my clips</a> here.</p>
 
           <br/>
           <br/>

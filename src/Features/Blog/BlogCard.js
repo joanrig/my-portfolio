@@ -48,8 +48,8 @@ class BlogCard extends Component  {
 
           </Card.Content>
 
-          <Card.Content extra className="cardBottom">
-            {pubDate}
+          <Card.Content extra className="right">
+            <p>published {pubDate}</p>
           </Card.Content>
         </Card>
       </>
