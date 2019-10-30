@@ -1,18 +1,10 @@
 import React from 'react';
-import ferris from './ferris.jpg'
+import ferris from './glacier.jpg'
 
-
-
-const divStyle = {
-  width: '115%',
-  height: '1100px',
-  backgroundImage: `url(${ferris})`,
-  backgroundSize: 'cover',
-};
 
 const FerrisPic = () => {
     return (
-      <div fluid className="ferris" style={divStyle} />
+      <img className="ferris" src={ferris} alt="boy looking through binoculars at mountins in Glacier National Park"/>
     );
 
 }

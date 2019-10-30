@@ -50,7 +50,7 @@ const Resume = () => {
         <p>
         <strong>Freelance Web Developer, Silver Spring, Md.</strong> July 2019 to present<br/>
         <p>
-          I learn best by building. Develop apps with JavaScript, React, Redux, Semantic UI React, Rails and Postgres. Please see my <Link to="./projects">online portfolio</Link> for details.
+          I learn best by building. Develop apps with JavaScript, React, Redux, Semantic UI React, Rails and Postgres. Working on solo projects as well as a group project to build a new site for a non-profit. Please see my <Link to="./projects"><strong>online portfolio</strong></Link> for details.
         </p>
         <strong>The Great Adventure Lab, Silver Spring, Md., Founder and managing partner,</strong> Aug. 2010 to present<br/>
           Bootstrapped an after school enrichment company with an initial investment of $3,000 in netbooks and robotics kits. Grew revenues to more than $400k in two years during a recession. Helped design and implement a database that reduced back-office costs by half. Hired staff, recruited partners, set up processes so the company mostly runs without me. We’ve taught more than 20k kids how to program.
