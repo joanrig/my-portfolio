@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Icon, Popup, Image } from 'semantic-ui-react'
+import { Container, Icon, Popup } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 import NavBar from '../NavBar'
 
@@ -30,9 +30,10 @@ const Resume = () => {
 
         <div className="center big">
           <a href="mailto: joan.indiana.lyness@gmail.com" ><Popup content='email me' trigger={<i class="mail icon" />} /></a>
-          <a href="https://www.linkedin.com/in/joanrigdon/"><Popup content='my LinkedIn profile' trigger={<i class="linkedin icon" />} /></a>
+          <a href="https://www.linkedin.com/in/joanrigdon/"><i class="linkedin icon" /></a>
           <a href="https://medium.com/@joanrigdon"><Popup content='Read my Algorithms 101 series on Medium' trigger={<i class="medium icon" />} /></a>
           <a href="https://twitter.com/joan_indiana"><Popup content='Follow me on Twitter' trigger={<i class="twitter icon" />} /></a>
+          <a href="https://github.com/joanrig"><i class="github icon" /></a>
         </div>
 
         <h2 className="ui block header center blue">
@@ -40,15 +41,19 @@ const Resume = () => {
         </h2>
 
         <p >
-          Full stack web developer with nine years of experience founding and building my own technology education company, where I developed solid management skills and discovered how much fun it is to learn and teach new programming languages. I love building apps with React.js, Redux and Postgres; I've also built projects with Ruby, Rails,  JavaScript, ActiveRecord, Sinatra and mySQL. As a former journalist with experience covering national policy, I would love to work on fun ways to present statistics and other data for a political publication, public interest group or a think tank.  I live near Washington, D.C.
+          Full stack web developer with nine years of experience founding and building my own technology education company, where I developed solid management skills and discovered how much fun it is to learn and teach new programming languages. As a former journalist with experience covering national policy, I would love to work on fun ways to present statistics and other data for a political publication, public interest group or a think tank.  I live near Washington, D.C.
         </p>
 
         <h2 className="ui block header center blue">
           Work Experience
         </h2>
         <p>
+        <strong>Freelance Web Developer, Silver Spring, Md.</strong> July 2019 to present<br/>
+        <p>
+          I learn best by building. Develop apps with JavaScript, React, Redux, Semantic UI React, Rails and Postgres. Please see my <Link to="./projects">online portfolio</Link> for details.
+        </p>
         <strong>The Great Adventure Lab, Silver Spring, Md., Founder and managing partner,</strong> Aug. 2010 to present<br/>
-          Bootstrapped an after school enrichment company with an initial investment of $3,000 in netbooks and robotics kits. Grew revenues to more than $400k in two years during a recession. Expanded to offer camps, events and birthday parties. Hired staff, recruited partners, set up processes so the company mostly runs without me. We’ve taught more than 20k kids how to program.
+          Bootstrapped an after school enrichment company with an initial investment of $3,000 in netbooks and robotics kits. Grew revenues to more than $400k in two years during a recession. Helped design and implement a database that reduced back-office costs by half. Hired staff, recruited partners, set up processes so the company mostly runs without me. We’ve taught more than 20k kids how to program.
         </p>
         <p>
           <strong>Joan Indiana Rigdon Freelance, Silver Spring, Md., Freelance magazine writer and columnist,</strong> Dec. 2001 - April 2012<br/>
