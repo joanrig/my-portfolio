@@ -15,7 +15,7 @@ const Resume = () => {
       <br/>
       <br/>
       <Container className="resume">
-      <Link to="/files/lyness-resume.pdf" target="_blank" download className="download"><Icon name="download"/>Click to download</Link>
+      <Link to="/files/lyness-resume.pdf" target="_blank" download className="download"><Icon name="download"/>download</Link>
         <br/>
         <br/>
         <div className="center huge">
