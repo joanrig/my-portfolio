@@ -34,7 +34,8 @@ class Carousel extends Component {
       adaptiveHeight: true,
       autoplay: true,
       autoplaySpeed: 3000,
-      
+      draggable: true
+
     }
 
 
