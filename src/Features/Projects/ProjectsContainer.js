@@ -1,11 +1,41 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Container, Card  } from 'semantic-ui-react'
 import ProjectCard from './ProjectCard.js'
 import NavBar from '../NavBar'
 import { projectsList } from './ProjectsList'
 
 
-const Projects = () => {
+class Projects extends Component {
+  constructor(props) {
+    super()
+
+    this.state = {
+        width: window.innerWidth
+    }
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', this.handleWindowSizeChange);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleWindowSizeChange);
+  }
+
+  handleWindowSizeChange = () => {
+    this.setState({ width: window.innerWidth });
+  }
+
+  render(){
+    let isMobile
+    const width = this.state.width
+    width <= 500 ? isMobile = true : isMobile = false
+
+
+    let itemsPerRow
+    isMobile? itemsPerRow = 1 : itemsPerRow = 2
+
+
 
     return (
       <>
@@ -23,7 +53,7 @@ const Projects = () => {
 
           <br/>
           <br/>
-          <Card.Group itemsPerRow={2}>
+          <Card.Group itemsPerRow={itemsPerRow}>
             {projectsList.map(project =>
               <ProjectCard
                 key={project.id} project={project} padding="20px"/>
@@ -37,6 +67,7 @@ const Projects = () => {
         </Container>
       </>
     )
+  }
 }
 
 
