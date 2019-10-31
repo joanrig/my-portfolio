@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import FerrisPic from './FerrisPic'
+import CoverPic from './CoverPic'
 import { Link, Redirect } from 'react-router-dom'
 
 
@@ -13,11 +13,11 @@ class Home extends Component {
 
   componentDidMount() {
     this.setState({ visible: true })
+    this.id = setTimeout(() => this.setState({ visible: false }), 3000)
     this.id = setTimeout(() => this.setState({ redirect: true }), 4000)
   }
 
   componentWillUnmount() {
-    this.setState({ visible: false })
     clearTimeout(this.id)
   }
 
@@ -28,15 +28,16 @@ class Home extends Component {
       return <Redirect to="./projects" />
     } else {
       return(
-          <div >
+          <div className={this.state.visible?'fadeIn':'fadeOut'}>
           <Link to="./projects">
             <br/>
-            <div className={this.state.visible?'fadeIn':'fadeOut'} >
-              <h2 className="grey center">I'm Joan. Let's build something fabulous together ...</h2>
+            <div >
+              <h2 className="grey center">I'm Joan. Let's build something fabulous together ...   </h2>
+
             </div>
             <br/>
 
-            <Link to='/projects'><FerrisPic /></Link>
+            <Link to='/projects'><CoverPic /></Link>
             <br/>
           </Link>
           </div>

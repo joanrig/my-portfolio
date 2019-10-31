@@ -131,18 +131,18 @@ html, body {
     height: 100%;
 }
 
-.ferris {
+.glacier {
   width: 100%;
   z-index: -1;
 }
 
 .fadeOut{
      opacity:0;
-     transition: opacity 0.5s;
+     transition: opacity 1s;
 
 }
 .fadeIn{
      opacity:1;
-     transition: opacity .5s 1s;
+     transition: opacity .5s .5s;
 
 }
