@@ -146,3 +146,9 @@ html, body {
      transition: opacity .5s .5s;
 
 }
+
+.fadeInSlow{
+     opacity:1;
+     transition: opacity 10s 10s;
+
+}

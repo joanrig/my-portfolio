@@ -32,7 +32,7 @@ class Home extends Component {
           <Link to="./projects">
             <br/>
             <div >
-              <h2 className="grey center">I'm Joan. Let's build something fabulous together ...   </h2>
+              <h2 className="grey center">I'm Joan.   Let's build something fabulous together ...   </h2>
 
             </div>
             <br/>
