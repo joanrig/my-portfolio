@@ -1,21 +1,42 @@
-import React from 'react';
+import React, { Component } from 'react';
 import FerrisPic from './FerrisPic'
-import { Link } from 'react-router-dom'
+import { Link, Redirect } from 'react-router-dom'
 
 
 
-const Home = () => {
+class Home extends Component {
+  state = {
+    redirect: false
+  }
 
-  return (
+  componentDidMount() {
+    this.id = setTimeout(() => this.setState({ redirect: true }), 4000)
+  }
 
-    <Link to="./projects">]
-      <br/>
-      <h1 className="grey center">I'm Joan. Let's build something fabulous togher.</h1>
-      <h1 className="grey center">my recent work</h1>
+  componentWillUnmount() {
+    clearTimeout(this.id)
+  }
 
-      <Link to='/projects'><FerrisPic /></Link>
-      <br/>
-    </Link>
-  )
+  render() {
+
+
+    if(this.state.redirect){
+      return <Redirect to="./projects" />
+    } else {
+      return(
+        <Link to="./projects">
+        <br/>
+        <h2 className="grey center">I'm Joan. Let's build something fabulous together ...</h2>
+
+        <Link to='/projects'><FerrisPic /></Link>
+        <br/>
+      </Link>
+    )
+    }
+
+  }
+
+
 }
+
 export default Home;
