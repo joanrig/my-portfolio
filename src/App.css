@@ -6,14 +6,8 @@
   background-color: rgb(10,10,16)
 }
 
-.ui.Card {
-  padding: 40px;
-}
 
 
-.description {
-  font-size: 1.3vw;
-}
 
 .center {
   text-align: center;
@@ -35,11 +29,11 @@
   color: rgb(255,255,255)
 }
 
-
 .grey {
   color:grey
 }
 
+/* font-size */
 .huge {
   font-size: 4.5vw;
 }
@@ -60,7 +54,25 @@
   font-size: 1vw;
 }
 
+/* projects */
+.ui.Card {
+  padding: 40px;
+}
 
+.description {
+  font-size: 1.3vw;
+}
+
+.card-image {
+  height: 51vh;
+  width: auto;
+}
+
+.demo-button {
+  background-color: white;
+}
+
+/* resume */
 
 .resume {
   font-family: 'Noto Sans KR', sans-serif;
@@ -70,32 +82,25 @@
   padding: 45px;
 }
 
-.education p {
-  line-height: 1.7vw;
-}
-
 .resume a {
   color: white;
 }
 
-
-
-
 .download {
   float:right;
+}
+
+.education p {
+  line-height: 1.7vw;
 }
 
 .block {
   background-color: rgb(255,155,0,0.6)
 }
 
-.about{
-  font-family: 'Noto Sans KR', sans-serif;
-  font-size: 1.4vw;
-  color: rgb(153,153,153);
-}
+/* about */
 
-.blog{
+.about{
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 1.4vw;
   color: rgb(153,153,153);
@@ -105,33 +110,39 @@
   line-height: 2vw;
 }
 
+/* blog */
+
+.blog{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 1.4vw;
+  color: rgb(153,153,153);
+}
+
+
 .right {
   text-align: right;
 }
 
-.ferris {
 
-  width: 100%;
-  z-index: -1;
-}
 
-.demo-button {
-  background-color: white;
-}
-
+/* home */
 html, body {
     margin: 0;
     height: 100%;
 }
 
+.ferris {
+  width: 100%;
+  z-index: -1;
+}
 
+.fadeOut{
+     opacity:0;
+     transition: opacity 0.5s;
 
+}
+.fadeIn{
+     opacity:1;
+     transition: opacity .5s 1s;
 
-
-
-
-
-.card-image {
-  height: 51vh;
-  width: auto;
 }
