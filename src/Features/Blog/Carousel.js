@@ -9,11 +9,13 @@ class Carousel extends Component {
   constructor(props){
     super(props)
     this.state = {
-      posts: []
+      posts: [],
+      width: window.innerWidth
     }
   }
 
   componentDidMount(){
+    window.addEventListener('resize', this.handleWindowSizeChange);
     let url = `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@joanrigdon`
 
     fetch(url)
@@ -21,16 +23,32 @@ class Carousel extends Component {
       .then(posts => this.setState({ posts: posts["items"]}))
   }
 
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleWindowSizeChange);
+  }
+
+  handleWindowSizeChange = () => {
+    this.setState({ width: window.innerWidth });
+  }
+
   render(){
+
+    let isMobile
+    const width = this.state.width
+    width <= 1100 ? isMobile = true : isMobile = false
+
+
+    let slidesPerRow
+    isMobile? slidesPerRow = 1 : slidesPerRow = 3
+
     let posts = this.state.posts.filter(post => post.categories.length > 0)
 
 
     var settings = {
-
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
-      slidesPerRow: 3,
+      slidesPerRow: slidesPerRow,
       adaptiveHeight: true,
       autoplay: true,
       autoplaySpeed: 3000,
@@ -47,7 +65,7 @@ class Carousel extends Component {
           <br/>
 
           <div className="big grey center">
-              My Recent Blog Posts
+            My Recent Blog Posts
           </div>
           <br/>
           <br/>
